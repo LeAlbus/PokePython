@@ -11,9 +11,8 @@ def main():
                 "name": pokemon_data["name"],
                 "type": pokemon_data["types"][0]["type"]["name"]
             })
-
-        #save data to a CSV file using pandas
-
+    
+    #save data to a CSV file using pandas
     df = pd.DataFrame(all_poke_data)
     df.to_csv("poke_data.csv", index=False)
 
